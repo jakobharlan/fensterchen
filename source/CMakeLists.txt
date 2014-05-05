@@ -1,5 +1,5 @@
 
-add_executable(example example.cpp)
+add_executable(example example.cpp point2d.cpp)
 #add_test(buffer-uniform COMMAND $<TARGET_FILE:example>)
 
 target_link_libraries(example ${FRAMEWORK_NAME} ${BINARY_FILES})
