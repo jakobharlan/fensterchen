@@ -12,6 +12,8 @@ public:
   Point2d(int,int);
   ~Point2d();
 
+  int const get_x();
+  int const get_y();
 
 };
 

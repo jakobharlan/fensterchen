@@ -11,3 +11,12 @@ y_(y)
 {}
 
 Point2d::~Point2d(){}
+
+int const Point2d::get_x()
+{
+	return x_;
+}
+int const Point2d::get_y()
+{
+	return y_;
+}
