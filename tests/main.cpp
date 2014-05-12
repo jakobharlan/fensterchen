@@ -1,9 +1,9 @@
 #include <UnitTest++.h>
-#include "../source/point2d.hpp"
+#include "point2d.hpp"
 
 SUITE (descirbe_point2d)
 { 
-  Point2d karl();
+  Point2d karl;
 
   TEST(default_point_should_be_0_0)
   {

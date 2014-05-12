@@ -1,13 +1,13 @@
-
 #find_package( UnitTest++ REQUIRED )
 
 add_executable(runTests main.cpp)
 
 target_link_libraries(runTests
-                      glfw
                       UnitTest++
+                      ${FRAMEWORK_NAME}
+                      ${BINARY_FILES}
                       )
 
-#add_dependencies(test glfw UnitTest++ ${FRAMEWORK_NAME} ${COPY_BINARY})
+#add_dependencies(test UnitTest++ ${FRAMEWORK_NAME} ${COPY_BINARY})
 
 install(TARGETS runTests DESTINATION .)
